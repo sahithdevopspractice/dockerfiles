@@ -1,0 +1,1 @@
+RUN is a instructon this instructoin will be useful while bulding an image or configuration.
