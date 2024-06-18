@@ -35,7 +35,7 @@ docker exec -it imageid bash
 
 Note:- Regarding Using ARG inthe dockerfile at first line
 ARG version
-FROM almalinux:${Version}
+FROM almalinux:${version}
 ARG username
 RUN adduser $username
 USER $username
@@ -45,3 +45,6 @@ RUN echo "course: ${COURSE}, Trainer: ${TRAINER}"
 ENV COURSE=${COURSE}
 ENV TRAINER=${TRAINER}
 CMD ["sleep","100"]
+
+### So here there is only one execption using ARG instruction at first line:-
+you can use AGR instruction before FROM instruction to provide the version. So whathappens now so here we can provide the version at the run time.
