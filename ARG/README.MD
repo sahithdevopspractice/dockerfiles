@@ -48,3 +48,6 @@ CMD ["sleep","100"]
 
 ### So here there is only one execption using ARG instruction at first line:-
 you can use AGR instruction before FROM instruction to provide the version. So whathappens now so here we can provide the version at the run time.
+
+ARG instruction can be used before FROM instruction to provide values to FROM instruction.
+ARG value defined before FROM will not be acessed after FROM
